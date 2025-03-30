@@ -23,6 +23,9 @@ if (NOT VTK_FOUND)
 endif()
 
 
+message("OpenCASCADE_INCLUDE_DIR = ${OpenCASCADE_INCLUDE_DIR}")
+include_directories(${OpenCASCADE_INCLUDE_DIR})
+
 # excluede dir name
 set(EXCLUDE_DIRS "build" ".git" "__pycache__")
 
