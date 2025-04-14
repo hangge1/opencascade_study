@@ -38,8 +38,8 @@ int main(int argc, char** argv)
     }
 
     // Visualize
-    viewer << shape;//BRepPrimAPI_MakeBox(10, 20, 30);
-
+    //viewer << shape;//BRepPrimAPI_MakeBox(10, 20, 30);
+    viewer << BRepPrimAPI_MakeBox(10, 20, 30);
 
     viewer.StartMessageLoop();
 

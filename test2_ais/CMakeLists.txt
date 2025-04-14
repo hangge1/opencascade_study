@@ -23,6 +23,8 @@ foreach(LIB ${OpenCASCADE_LIBRARIES})
 endforeach()
 
 
+target_link_libraries(${TARGETNAME} debug ais)
+
 if(MSVC)
     set_property(TARGET ${TARGETNAME}  PROPERTY VS_DEBUGGER_ENVIRONMENT "PATH=D:/code_project/OCC_DEMO/vtk-install/bin;D:/code_project/OCC_DEMO/occ-install/win64/vc14/bind;$ENV{PATH}")
 endif()
